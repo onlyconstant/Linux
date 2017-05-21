@@ -1,0 +1,21 @@
+TODO - 
+  configure wired network connection with DHCP or with static ip address
+  enable wired network connection at system boot
+  enable / disable wired network interface
+  start / stop wired network service
+  check ip link status of wired network
+  check ip link address of wired network
+
+CentOS server:
+
+
+Ubuntu Linux server:
+
+
+Arch Linux：
+
+
+Gentoo Linux：
+
+
+FreeBSD:
