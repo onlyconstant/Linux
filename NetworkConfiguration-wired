@@ -7,10 +7,37 @@ TODO -
   check ip link address of wired network
 
 CentOS server:
+    /etc/sysconfig/network-scripts/ifcfg-ens2
+
+    TYPE="Ethernet"
+    BOOTPROTO="static"
+    DEFROUTE="yes"
+    PEERDNS="yes"
+    PEERROUTES="yes"
+    IPV4_FAILURE_FATAL="no"
+    IPV6INIT="no
+    #IPV6_AUTOCONF="yes"
+    #IPV6_DEFROUTE="yes"
+    #IPV6_PEERDNS="yes"
+    #IPV6_PEERROUTES="yes"
+    #IPV6_FAILURE_FATAL="no"
+    #IPV6_ADDR_GEN_MODE="stable-privacy"
+    NAME="ens2"
+    UUID="384404eb-c697-43f9-aa11-7f37a3961f07"
+    DEVICE="ens2"
+    ONBOOT="yes"
+    IPADDR0=192.168.1.24
+    PREFIX0=24
+    GATEWAY0=192.168.1.1
+    DNS1=192.168.1.1
 
 
 Ubuntu Linux server:
-
+    /etc/network/interfaces
+    iface ens2 inet static
+        address 192.168.1.25/24
+        gateway 192.168.1.1
+        dns-nameserver 192.168.1.1  -- this line was missing in first place, resulting in no dns name resolving
 
 Arch Linux：
 
