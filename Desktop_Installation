@@ -1,0 +1,26 @@
+elementary@elementary:~$ sudo parted /dev/sda
+GNU Parted 3.2
+Using /dev/sda
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+(parted) print
+Model: ATA ST3160815SV (scsi)
+Disk /dev/sda: 160GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start   End     Size    File system     Name          Flags
+ 1      1049kB  1075MB  1074MB  fat32           efi           msftdata
+ 2      1075MB  1077MB  2097kB  ext4            boot_grub
+ 3      1077MB  23.6GB  22.5GB  ext4            manjaro
+ 4      23.6GB  46.1GB  22.5GB  ext4            antergos
+ 5      46.1GB  68.6GB  22.5GB  ext4            elementaryos
+ 6      68.6GB  91.2GB  22.5GB  ext4            opensuse
+ 7      91.2GB  114GB   22.5GB  ext4            parrot
+ 8      114GB   136GB   22.5GB  ext4            fedora
+ 9      136GB   147GB   10.7GB  ext4            gentoo
+10      147GB   158GB   10.7GB  ext4            lfs
+11      158GB   160GB   2349MB  linux-swap(v1)
+
+(parted) q                                                                
+elementary@elementary:~$ 
