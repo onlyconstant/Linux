@@ -12,14 +12,14 @@ Disk Flags:
 Number  Start   End     Size    File system     Name          Flags
  1      1049kB  1075MB  1074MB  fat32           efi           msftdata
  2      1075MB  1077MB  2097kB  ext4            boot_grub
- 3      1077MB  23.6GB  22.5GB  ext4            manjaro
- 4      23.6GB  46.1GB  22.5GB  ext4            antergos
- 5      46.1GB  68.6GB  22.5GB  ext4            elementaryos
- 6      68.6GB  91.2GB  22.5GB  ext4            opensuse
- 7      91.2GB  114GB   22.5GB  ext4            parrot
- 8      114GB   136GB   22.5GB  ext4            fedora
- 9      136GB   147GB   10.7GB  ext4            gentoo
-10      147GB   158GB   10.7GB  ext4            lfs
+ 3      1077MB  23.6GB  22.5GB  ext4            manjaro (installed)
+ 4      23.6GB  46.1GB  22.5GB  ext4            antergos (installed)
+ 5      46.1GB  68.6GB  22.5GB  ext4            elementaryos (installed)
+ 6      68.6GB  91.2GB  22.5GB  ext4            opensuse (installed)
+ 7      91.2GB  114GB   22.5GB  ext4            parrot (installed)
+ 8      114GB   136GB   22.5GB  ext4            fedora (installed)
+ 9      136GB   147GB   10.7GB  ext4            gentoo (planned)
+10      147GB   158GB   10.7GB  ext4            lfs (planned)
 11      158GB   160GB   2349MB  linux-swap(v1)
 
 (parted) q                                                                
