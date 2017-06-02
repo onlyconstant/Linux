@@ -24,3 +24,5 @@ Number  Start   End     Size    File system     Name          Flags
 
 (parted) q                                                                
 elementary@elementary:~$ 
+
+test
