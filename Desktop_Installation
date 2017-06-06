@@ -1,13 +1,9 @@
 elementary@elementary:~$ sudo parted /dev/sda
-GNU Parted 3.2
 Using /dev/sda
-Welcome to GNU Parted! Type 'help' to view a list of commands.
-(parted) print
 Model: ATA ST3160815SV (scsi)
 Disk /dev/sda: 160GB
 Sector size (logical/physical): 512B/512B
 Partition Table: gpt
-Disk Flags: 
 
 Number  Start   End     Size    File system     Name          Flags
  1      1049kB  1075MB  1074MB  fat32           efi           msftdata
@@ -18,11 +14,41 @@ Number  Start   End     Size    File system     Name          Flags
  6      68.6GB  91.2GB  22.5GB  ext4            opensuse (installed)
  7      91.2GB  114GB   22.5GB  ext4            parrot (installed)
  8      114GB   136GB   22.5GB  ext4            fedora (installed)
- 9      136GB   147GB   10.7GB  ext4            gentoo (planned)
+ 9      136GB   147GB   10.7GB  ext4            gentoo (installed)
 10      147GB   158GB   10.7GB  ext4            lfs (planned)
 11      158GB   160GB   2349MB  linux-swap(v1)
 
-(parted) q                                                                
-elementary@elementary:~$ 
+Important note:
+    Manjaro:
 
-test
+    Antergos:
+        1. after default installation of Antergos, I cannot use dvorak keyboard in login page.
+            according to one answer from internet, delete dvorak, add English, delete English, add dvorak will fix this.
+        2. during one boot, antergos login page went dart and come back time and time, I have to restart computer.
+
+    ElementaryOS:
+
+    OpenSuse:
+        1. yast is a powerful tool not only for software updating.
+
+    Gentoo:
+        1. after gentoo installation, network interface was not brought up.
+            lspci shows no kernel module loaded for the nic.
+            update kernel configuration, remove all other nic driver except RTL8169
+            re-compile kernel and driver properly loaded.
+            I can save current version of kernel configuration for future gentoo installation for desktop computer.
+        2. I select "desktop" profile when installing gentoo, I am not sure what else I still need to have awesome wm.
+        3. xorg-server, awesome installed, and put "exec awesome" in ~/.xinitrc file to start awesome with startx.
+            To enable xorg-server / awesome, refer to https://wiki.gentoo.org/wiki/Xorg/Guide, it will tell
+            how-to kernel setting, how-to graphic card driver select, how-to xorg-server installation, etc.
+        4. backup kernel config file for future use (done).
+
+
+    Parrot:
+        1. apt-get update may report failure in downloading some packages, add --fix-missing parameter will fix it.
+
+    General:
+        How to auto partition / mkfs?
+        How to backup existing installation?
+        How to do multi-boot linux and Windows10?
+        How to do UEFI installation?
